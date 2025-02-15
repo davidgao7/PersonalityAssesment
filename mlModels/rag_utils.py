@@ -32,6 +32,14 @@ rag = LightRAG(
 
 # Function to extract text from a PDF file
 def extract_text_from_pdf(pdf_path):
+    """
+
+    Args:
+        pdf_path (str): path of pdf
+
+    Returns:
+        text in the pdf
+    """
     text = ""
     try:
         doc = fitz.open(pdf_path)
